@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
 					cout << "[info]return to menu.\n";
 					break;
 				}else{
-					if (_access(dir, 0) == -1){
+					if (access(dir, 0) == -1){
 						cout << "[fail]target directory doesn't exist.\n";
 						continue;
 					}else{
@@ -62,7 +62,7 @@ int main(int argc, char** argv) {
                         if (strcmp(dir, "0") == 0){
                             cout << "[info]return to menu.\n";
                             break;
-                        }else if (_access(dir, 0) == -1){
+                        }else if (access(dir, 0) == -1){
                             cout << "[fail]target directory doesn't exist.\n";
                             continue;
                         }else{
@@ -86,7 +86,7 @@ int main(int argc, char** argv) {
                         if (strcmp(dir, "0") == 0){
                             cout << "[info]return to menu.\n";
                             break;
-                        }else if (_access(dir, 0) == -1){
+                        }else if (access(dir, 0) == -1){
                             cout << "[fail]target directory doesn't exist.\n";
                             continue;
                         }else{

@@ -8,6 +8,7 @@
 #include <string>
 #include <cstring>
 #include <iomanip>
+#include <mysql.h>
 
 using std::cout;
 using std::cin;

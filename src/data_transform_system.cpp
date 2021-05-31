@@ -15,7 +15,7 @@ Data_transform_system::Data_transform_system(){
 }
 
 Data_transform_system::Data_transform_system(char dir[]){
-	if (_access(dir, 0) == -1){
+	if (access(dir, 0) == -1){
 		cout << "[fail]target directory doesn't exist.\n";
 	}else{
 		strcpy(this->dir, dir);
@@ -34,7 +34,7 @@ void Data_transform_system::init(){
 
 void Data_transform_system::data_export(char dir[], int size){
     // cout << "[info] Diving into the data_transform_system now\n";
-	if (_access(dir, 0) == -1){
+	if (access(dir, 0) == -1){
 		// cout << "[fail]target directory doesn't exist.\n";
 	}else{
 		strncpy(this->dir, dir, 1024);
@@ -57,7 +57,7 @@ void Data_transform_system::data_export(char dir[], int size){
 
 void Data_transform_system::dataset_export(char dir[], int size){
     // cout << "[info] Diving into the data_transform_system now\n";
-	if (_access(dir, 0) == -1){
+	if (access(dir, 0) == -1){
 		// cout << "[fail]target directory doesn't exist.\n";
 	}else{
 		strncpy(this->dir, dir, 1024);
@@ -118,7 +118,7 @@ void* thread( void *arg )
                 string tmp = cur_p;
                 tmp += "\\";
                 tmp += fileinfo.name;
-                if (_access(tmp.c_str(), 0) == -1){
+                if (access(tmp.c_str(), 0) == -1){
                     cout << "[Error] failed to open " << tmp << endl;
                 }else if (tmp.length() >= 2048){
                     cout << tmp << "is longer than 2048\n";
@@ -140,7 +140,7 @@ void* thread( void *arg )
 
 void Data_transform_system::data_import(char dir[], int size){
 
-	if (_access(dir, 0) == -1){
+	if (access(dir, 0) == -1){
 		cout << "[fail]target directory doesn't exist.\n";
 	}else{
 		strncpy(this->dir, dir, 1024);

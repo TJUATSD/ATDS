@@ -1,5 +1,4 @@
 #include "data_management_system.h"
-#include <mysql.h>
 
 #define Tconn &(this->conn)
 #define dataset_name_max_length 64

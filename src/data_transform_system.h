@@ -6,10 +6,11 @@
 #include "data_transform_system/table.h"
 #include "data_transform_system/transformer.h"
 #include <cstring>
-#include <io.h>
+#include <sys/io.h>
+#include <sys/types.h>
 #include <string>
 #include <stack>
-#include <direct.h>
+#include <dirent.h>
 #include <time.h>
 #include <pthread.h>
 #include "data_transform_system/table.h"

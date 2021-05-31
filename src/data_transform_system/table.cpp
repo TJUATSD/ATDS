@@ -1,4 +1,4 @@
-#include "Table.h"
+#include "table.h"
 // YAML::NodeType undefined 0 Null 1 Scalar 2 Sequence 3 Map 4
 
 string Table::flatten(YAML::Node in){

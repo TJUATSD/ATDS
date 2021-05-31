@@ -4,8 +4,8 @@
 #include <iostream>
 #include <yaml-cpp/yaml.h>
 #include <assert.h>
-#include <direct.h>
-#include <io.h>
+#include <dirent.h>
+#include <sys/io.h>
 #include <fstream>
 #include <string>
 #include <regex>

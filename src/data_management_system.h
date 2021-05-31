@@ -5,7 +5,6 @@
 */
 
 #include "data_transform_system/table.h"
-#include <mysql.h>
 #include <string>
 #include <cstring>
 #include <iomanip>

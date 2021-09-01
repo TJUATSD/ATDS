@@ -18,7 +18,7 @@ obj: main.cpp data_management_system.cpp data_transform_system.cpp $(SYS_DIR)/ta
 	@$(CC) -c $(SYS_DIR)/transformer.cpp -o $(O)/transformer.o $(CFLAGS)
 	@$(CC) -c data_management_system.cpp  -o $(O)/data_management_system.o $(CFLAGS)
 	@$(CC) -c data_transform_system.cpp -o $(O)/data_transform_system.o $(CFLAGS)
-	@$(CC) -c main.cpp -o $(O)/main.cpp $(O)/main.o $(CFLAGS)
+	@$(CC) main.cpp -o $(O)/main $(CFLAGS)
 
 build: obj 
 	@$(CC) $(OBJS) -o $(O)/main $(CFLAGS)
